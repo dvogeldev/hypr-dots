@@ -1,7 +1,6 @@
 {inputs, ...}: {
   imports = [
     ./boot.nix
-    ./data-drive.nix
     ./flatpak.nix
     ./fonts.nix
     ./greetd.nix
