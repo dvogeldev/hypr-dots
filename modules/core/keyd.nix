@@ -3,7 +3,7 @@ _: {
     enable = true;
     keyboards.default.settings = {
       main = {
-        capslock = "(control, esc)";
+        capslock = "overload(control, esc)";
         esc = "capslock";
       };
     };
