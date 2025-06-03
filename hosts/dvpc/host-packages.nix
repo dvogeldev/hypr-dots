@@ -1,8 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    audacity
     discord
+    keyd
     nodejs
-    emacs-pgtk
   ];
 }
