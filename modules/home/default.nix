@@ -5,6 +5,8 @@ in {
     ./amfora.nix
     ./bash.nix
     ./bashrc-personal.nix
+    ./fish.nix
+    ./fishrc-personal.nix
     ./bat.nix
     ./btop.nix
     ./cava.nix
