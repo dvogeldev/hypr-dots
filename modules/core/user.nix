@@ -27,6 +27,7 @@ in {
   users.users.${username} = {
     isNormalUser = true;
     description = "${gitUsername}";
+    initialHashedPassword = "$6$KWefkoFX/X9n4KdB$gzfnQFIU/SYHzWSRxkmND1V/fhie8/DPPxTazSdIQs2HpQzKkhzbC9HTBeOUCBfHDcLmfKJC9bkYhd//ygPOO/";
     extraGroups = [
       "adbusers"
       "docker"
