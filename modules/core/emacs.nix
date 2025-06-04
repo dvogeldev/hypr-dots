@@ -1,14 +1,19 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    emacs-pgtk
+    ((emacsPackagesFor emacs-pgtk).emacsWithPackages (epkgs: [
+      epkgs.vterm
+    ]))
     # Needed for doom
-    fd
-    fzf
-    ripgrep
-    libvterm
-    cmake
     aspell
     aspellDicts.en
+    cmake
+    fd
+    fzf
+    gnumake
+    libvterm
+    pandoc
+    ripgrep
+    shellcheck
   ];
 
   services.emacs = {
