@@ -9,7 +9,7 @@
     aspellDicts.en
     fd
     fzf
-    nixfmt # nix formatter
+    nixfmt-rfc-style # nix formatter updated to latest spec
     nil # lsp for nix
     pandoc
     ripgrep
