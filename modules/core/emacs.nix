@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.systemPackages = with pkgs; [
     ((emacsPackagesFor emacs-pgtk).emacsWithPackages (epkgs: [
       epkgs.vterm
@@ -6,11 +7,10 @@
     # Needed for doom
     aspell
     aspellDicts.en
-    cmake
     fd
     fzf
-    gnumake
-    libvterm
+    nixfmt # nix formatter
+    nil # lsp for nix
     pandoc
     ripgrep
     shellcheck
