@@ -1,6 +1,7 @@
 {inputs, ...}: {
   imports = [
     ./boot.nix
+    ./emacs.nix
     ./flatpak.nix
     ./fonts.nix
     ./greetd.nix

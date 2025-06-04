@@ -29,7 +29,6 @@
     # TODO docker-compose # Allows Controlling Docker From A Single File
     duf # Utility For Viewing Disk Usage In Terminal
     easyeffects # Audio effects for Pipewire
-    emacs-pgtk # Emacs Pgtk for Wayland
     eza # Beautiful ls Replacement
     ffmpeg # Terminal Video / Audio Editing
     file-roller # Archive Manager
