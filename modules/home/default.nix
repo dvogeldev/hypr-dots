@@ -13,6 +13,7 @@ in {
     ./emoji.nix
     ./eza.nix
     ./fastfetch
+    ./fonts.nix
     ./fzf.nix
     ./gh.nix
     ./ghostty.nix
