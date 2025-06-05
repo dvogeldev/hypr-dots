@@ -1,18 +1,19 @@
-{host, ...}: let
+{ host, ... }:
+let
   inherit (import ../../hosts/${host}/variables.nix) waybarChoice;
-in {
+in
+{
   imports = [
     ./amfora.nix
     ./bash.nix
     ./bashrc-personal.nix
-    ./fish.nix
-    ./fishrc-personal.nix
     ./bat.nix
     ./btop.nix
     ./cava.nix
     ./emoji.nix
     ./eza.nix
     ./fastfetch
+    ./fish
     ./fonts.nix
     ./fzf.nix
     ./gh.nix
@@ -24,20 +25,20 @@ in {
     ./kitty.nix
     ./lazygit.nix
     ./nvf.nix
-    ./rofi
     ./qt.nix
+    ./rofi
     ./scripts
     ./starship.nix
     ./stylix.nix
     ./swappy.nix
     ./swaync.nix
     ./virtmanager.nix
-    waybarChoice
     ./wezterm.nix
     ./wlogout
     ./xdg.nix
     ./yazi
     ./zoxide.nix
     ./zsh
+    waybarChoice
   ];
 }
