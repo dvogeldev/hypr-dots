@@ -7,7 +7,6 @@
     installVimSyntax = true;
     package = pkgs.ghostty;
   };
-  stylix.targets.ghostty.enable = true; # Explicitly set stylix as theme.
   home.file."./.config/ghostty/config".text = ''
 
     #theme = Aura

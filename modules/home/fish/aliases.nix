@@ -1,4 +1,5 @@
-_: {
+{ inputs, ... }:
+{
   programs.fish.shellAliases = {
     # Utilities
     ".." = "cd ..";
@@ -9,12 +10,18 @@ _: {
     cla = "clear && ls -la";
     cll = "clear && eza -lh --group-directories-first";
     cls = "clear && ls";
+    cat = "bat";
+    man = "batman";
     # Nixos
-    nrb = "sudo nixos-rebuild boot --flake ~/mydots#dvpc";
-    nrs = "sudo nixos-rebuild switch --flake ~/mydots#dvpc";
-    nrt = "sudo nixos-rebuild test --flake ~/mydots#dvpc";
-    hms = "home-manager switch --flake ~/mydots#david@dvpc";
+    # nrb = "sudo nixos-rebuild boot --flake ~/mydots#dvpc";
+    # nrs = "sudo nixos-rebuild switch --flake ~/mydots#dvpc";
+    # nrt = "sudo nixos-rebuild test --flake ~/mydots#dvpc";
+    # hms = "home-manager switch --flake ~/mydots#david@dvpc";
     sr = "sudo reboot";
+    fb = "nh os boot --hostname nvidia";
+    fr = "nh os switch --hostname nvidia";
+    ft = "nh os test --hostname nvidia";
+    fu = "nh os switch --hostname nvidia --update";
     # Eza
     ls = "eza --group-directories-first --icons --color-scale";
     lt = "eza --tree --level=2 --icons";
