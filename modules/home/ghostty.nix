@@ -1,17 +1,24 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   programs.ghostty = {
     enable = true;
+    enableFishIntegration = true;
+    installBatSyntax = true;
+    installVimSyntax = true;
     package = pkgs.ghostty;
   };
+  stylix.targets.ghostty.enable = true; # Explicitly set stylix as theme.
   home.file."./.config/ghostty/config".text = ''
 
     #theme = Aura
-    theme = Dracula
+    #theme = Dracula
     #theme = Aardvark Blue
     #theme = GruvboxDarkHard
     adjust-cell-height = 10%
     window-theme = dark
     window-height = 32
+    window-padding-x = 10
+    window-padding-y = 10
     window-width = 110
     background-opacity = 0.95
     background-blur-radius = 60
@@ -60,13 +67,13 @@
     # other
     #copy-on-select = clipboard
 
-    font-size = 12
+    font-size = 14
     #font-family = JetBrainsMono Nerd Font Mono
     #font-family-bold = JetBrainsMono NFM Bold
     #font-family-bold-italic = JetBrainsMono NFM Bold Italic
     #font-family-italic = JetBrainsMono NFM Italic
 
-    font-family = BerkeleyMono Nerd Font
+    font-family = Hasklug Nerd Font
     #font-family = Iosevka Nerd Font
     # font-family = SFMono Nerd Font
 
