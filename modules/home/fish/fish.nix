@@ -32,19 +32,19 @@
       }
       {
         name = "fzf";
-        src = pkgs.fishPlugins.fzf;
+        src = pkgs.fishPlugins.fzf.src;
       }
       {
         name = "puffer";
-        src = pkgs.fishPlugins.puffer;
+        src = pkgs.fishPlugins.puffer.src;
       }
       {
         name = "tide";
-        src = pkgs.fishPlugins.tide;
+        src = pkgs.fishPlugins.tide.src;
       }
       {
         name = "foreign environment";
-        src = pkgs.fishPlugins.foreign-env;
+        src = pkgs.fishPlugins.foreign-env.src;
       }
     ];
   };
