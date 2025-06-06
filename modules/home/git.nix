@@ -13,5 +13,12 @@ in {
       log.date = "iso";
       merge.conflictStyle = "diff3";
     };
+    aliases = {
+      lg = "log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %C(green)(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit";
+      co = "checkout";
+      br = "branch --sort=-committerdate";
+      st = "status";
+      df = "diff";
+    };
   };
 }
