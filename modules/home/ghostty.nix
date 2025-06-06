@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.ghostty = {
     enable = true;
     enableFishIntegration = true;
@@ -66,7 +65,7 @@
     # other
     #copy-on-select = clipboard
 
-    font-size = 14
+    font-size = 18
     #font-family = JetBrainsMono Nerd Font Mono
     #font-family-bold = JetBrainsMono NFM Bold
     #font-family-bold-italic = JetBrainsMono NFM Bold Italic
