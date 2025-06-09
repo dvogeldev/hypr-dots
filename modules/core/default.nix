@@ -1,4 +1,5 @@
-{inputs, ...}: {
+{ inputs, ... }:
+{
   imports = [
     ./boot.nix
     ./emacs.nix
@@ -11,6 +12,7 @@
     ./nfs.nix
     ./nh.nix
     ./packages.nix
+    ./podman.nix
     ./printing.nix
     ./security.nix
     ./services.nix
