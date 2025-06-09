@@ -2,9 +2,10 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   programs = {
-    hyprland.enable = true; #someone forgot to set this so desktop file is created
+    hyprland.enable = true; # someone forgot to set this so desktop file is created
     dconf.enable = true;
     seahorse.enable = true;
     fuse.userAllowOther = true;
@@ -27,14 +28,16 @@
     brightnessctl # For Screen Brightness Control
     cliphist # Clipboard manager using rofi menu
     # TODO docker-compose # Allows Controlling Docker From A Single File
+    direnv
     duf # Utility For Viewing Disk Usage In Terminal
     easyeffects # Audio effects for Pipewire
+    editorconfig-core-c
     eza # Beautiful ls Replacement
     ffmpeg # Terminal Video / Audio Editing
     file-roller # Archive Manager
     freetube # FOSS youTube Player
     gimp # Great Photo Editor
-    glxinfo #needed for inxi diag util
+    glxinfo # needed for inxi diag util
     greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     hyprpicker # Color Picker
     eog # For Image Viewing
@@ -47,8 +50,8 @@
     mpv # Incredible Video Player
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
-    nwg-displays #configure monitor configs via GUI
-    onefetch #provides zsaneyos build info on current system
+    nwg-displays # configure monitor configs via GUI
+    onefetch # provides zsaneyos build info on current system
     pavucontrol # For Editing Audio Levels & Devices
     pciutils # Collection Of Tools For Inspecting PCI Devices
     picard # For Changing Music Metadata & Getting Cover Art
