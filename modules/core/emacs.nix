@@ -12,9 +12,17 @@
     nixfmt-rfc-style # nix formatter updated to latest spec
     nil # lsp for nix
     pandoc
+    python3
     ripgrep
     shellcheck
+    nodejs # For Javascript runtime and npm
+    # Language servers for web development
+    nodePackages.typescript-language-server
+    nodePackages.vscode-lanservers-extracted # Provides servers for HTML, CSS, JSON
   ];
+
+  # Required for Emacs native compilation to find libraries
+  programs.nix-ld.enable = true;
 
   services.emacs = {
     enable = true;

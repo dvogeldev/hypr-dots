@@ -1,8 +1,6 @@
-{ host, ... }:
-let
+{host, ...}: let
   inherit (import ../../hosts/${host}/variables.nix) waybarChoice;
-in
-{
+in {
   imports = [
     ./amfora.nix
     ./bash.nix
@@ -10,6 +8,7 @@ in
     ./bat.nix
     ./btop.nix
     ./cava.nix
+    ./emacs
     ./emoji.nix
     ./eza.nix
     ./fastfetch
