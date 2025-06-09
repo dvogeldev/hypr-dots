@@ -18,7 +18,7 @@
     nodejs # For Javascript runtime and npm
     # Language servers for web development
     nodePackages.typescript-language-server
-    nodePackages.vscode-lanservers-extracted # Provides servers for HTML, CSS, JSON
+    nodePackages.vscode-langservers-extracted # Provides servers for HTML, CSS, JSON
   ];
 
   # Required for Emacs native compilation to find libraries
