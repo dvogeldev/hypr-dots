@@ -5,5 +5,6 @@
     meld
     keyd
     nodejs
+    neovim
   ];
 }

@@ -7,7 +7,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
-    nvf.url = "github:notashelf/nvf";
+    # nvf.url = "github:notashelf/nvf";
     emacs-overlay.url = "github:nix-community/emacs-overlay";
     nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
     stylix.url = "github:danth/stylix/release-25.05";
