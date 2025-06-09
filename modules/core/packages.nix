@@ -57,6 +57,7 @@
     picard # For Changing Music Metadata & Getting Cover Art
     pkg-config # Wrapper Script For Allowing Packages To Get Info On Others
     playerctl # Allows Changing Media Volume Through Scripts
+    prettierd # Prettier, as a daemon, for improved formatting speed
     ripgrep # Improved Grep
     socat # Needed For Screenshots
     unrar # Tool For Handling .rar Files
