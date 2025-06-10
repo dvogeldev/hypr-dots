@@ -1,19 +1,41 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    ((emacsPackagesFor emacs-pgtk).emacsWithPackages (epkgs: [
-      epkgs.vterm
-    ]))
-    (emacs-pgtk.override {
-      withImageMagick = true;
-      withRSVG = true;
-    })
+    (
+      (emacsPackagesFor (
+        emacs-pgtk.overrideAttrs (oldAttrs: {
+          configureFlags = oldAttrs.configureFlags ++ [
+            "--disable-build-details"
+            "--with-modules"
+            "--with-pgtk"
+            "--with-compress-install"
+            "--with-toolkit-scroll-bars"
+            "--with-native-compilation"
+            "--with-imagemagick"
+            "--with-rsvg"
+            "--with-mailutils"
+            "--without-small-ja-dic"
+            "--with-tree-sitter"
+            "--without-xinput2"
+            "--without-xwidgets"
+            "--with-dbus"
+            "--with-selinux"
+          ];
+          buildInputs = oldAttrs.buildInputs ++ [
+            pkgs.imagemagick
+            pkgs.librsvg
+          ];
+        })
+      )).emacsWithPackages
+      (epkgs: [
+        epkgs.vterm
+      ])
+    )
     # Needed for doom
     aspell
     aspellDicts.en
     fd
     fzf
-    librsvg # add svg support
     nixfmt-rfc-style # nix formatter updated to latest spec
     nil # lsp for nix
     pandoc
