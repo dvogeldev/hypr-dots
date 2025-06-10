@@ -4,11 +4,16 @@
     ((emacsPackagesFor emacs-pgtk).emacsWithPackages (epkgs: [
       epkgs.vterm
     ]))
+    (emacs-pgtk.override {
+      withImageMagick = true;
+      withRSVG = true;
+    })
     # Needed for doom
     aspell
     aspellDicts.en
     fd
     fzf
+    librsvg # add svg support
     nixfmt-rfc-style # nix formatter updated to latest spec
     nil # lsp for nix
     pandoc
