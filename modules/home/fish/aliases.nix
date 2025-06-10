@@ -42,7 +42,7 @@
     gcom = "git commit -m";
     gd = "git diff";
     gf = "git fetch";
-    gl = "git log";
+    gl = "git log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %C(green)(%cr)%C(bold blue) <%an>%Creset' --abbrev-commit";
     gph = "git push";
     gpl = "git pull";
     gs = "git status";
