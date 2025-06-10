@@ -18,6 +18,7 @@
       # Environment variables
       set -gx TERMINAL "ghostty"
       set -gx EDITOR "emacsclient -c -a 'Emacs'"
+      set -gx BROWSER "brave"
       set -gx manpager "batman"
       set -gx GDK_SCALE "1"
       set -gx QT_SCALE_FACTOR "1"
