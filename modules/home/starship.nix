@@ -1,6 +1,6 @@
-{pkgs, ...}: {
-  programs.starship = {
-    enable = false;
-    package = pkgs.starship;
-  };
-}
+# {pkgs, ...}: {
+#   programs.starship = {
+#     enable = false;
+#     package = pkgs.starship;
+#   };
+# }

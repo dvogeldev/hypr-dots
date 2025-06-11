@@ -29,10 +29,11 @@ in
     ./qt.nix
     ./rofi
     ./scripts
-    ./starship.nix
+    # ./starship.nix
     ./stylix.nix
     ./swappy.nix
     ./swaync.nix
+    ./tldr.nix
     ./virtmanager.nix
     ./wezterm.nix
     ./wlogout
