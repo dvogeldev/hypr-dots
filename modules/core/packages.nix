@@ -60,6 +60,7 @@
     prettierd # Prettier, as a daemon, for improved formatting speed
     ripgrep # Improved Grep
     socat # Needed For Screenshots
+    tealdeer # A very fast implementation of tldr in Rust.
     unrar # Tool For Handling .rar Files
     unzip # Tool For Handling .zip Files
     usbutils # Good Tools For USB Devices
