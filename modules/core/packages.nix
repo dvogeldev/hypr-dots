@@ -28,6 +28,7 @@
     brightnessctl # For Screen Brightness Control
     cliphist # Clipboard manager using rofi menu
     # TODO docker-compose # Allows Controlling Docker From A Single File
+    dbus
     direnv
     duf # Utility For Viewing Disk Usage In Terminal
     easyeffects # Audio effects for Pipewire
@@ -51,6 +52,7 @@
     mpv # Incredible Video Player
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
+    nspr # 4 codellm
     nss # 4 codellm
     nwg-displays # configure monitor configs via GUI
     onefetch # provides zsaneyos build info on current system
