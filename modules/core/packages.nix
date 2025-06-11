@@ -38,6 +38,7 @@
     freetube # FOSS youTube Player
     gimp # Great Photo Editor
     glxinfo # needed for inxi diag util
+    glibc # 4 codellm
     greetd.tuigreet # The Login Manager (Sometimes Referred To As Display Manager)
     hyprpicker # Color Picker
     eog # For Image Viewing
@@ -50,6 +51,7 @@
     mpv # Incredible Video Player
     ncdu # Disk Usage Analyzer With Ncurses Interface
     nixfmt-rfc-style # Nix Formatter
+    nss # 4 codellm
     nwg-displays # configure monitor configs via GUI
     onefetch # provides zsaneyos build info on current system
     pavucontrol # For Editing Audio Levels & Devices
