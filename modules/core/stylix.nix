@@ -2,9 +2,11 @@
   pkgs,
   host,
   ...
-}: let
+}:
+let
   inherit (import ../../hosts/${host}/variables.nix) stylixImage;
-in {
+in
+{
   # Styling Options
   stylix = {
     enable = true;
@@ -36,16 +38,18 @@ in {
     };
     fonts = {
       monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrains Mono";
+        # package = pkgs.nerd-fonts.jetbrains-mono;
+        package = pkgs.maple-mono.NF;
+        # name = "JetBrains Mono";
+        name = "Maple Mono NF";
       };
       sansSerif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.poppins;
+        name = "Poppins";
       };
       serif = {
-        package = pkgs.montserrat;
-        name = "Montserrat";
+        package = pkgs.liberation_ttf;
+        name = "Liberation Serif";
       };
       sizes = {
         applications = 12;
