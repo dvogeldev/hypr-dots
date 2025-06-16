@@ -16,6 +16,7 @@
     ./printing.nix
     ./security.nix
     ./services.nix
+    ./ssh.nix
     ./starfish.nix
     ./steam.nix
     ./stylix.nix
