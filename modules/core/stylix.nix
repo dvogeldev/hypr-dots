@@ -11,25 +11,25 @@ in
   stylix = {
     enable = true;
     image = stylixImage;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
-    # base16Scheme = {
-    #   base00 = "282936";
-    #   base01 = "3a3c4e";
-    #   base02 = "4d4f68";
-    #   base03 = "626483";
-    #   base04 = "62d6e8";
-    #   base05 = "e9e9f4";
-    #   base06 = "f1f2f8";
-    #   base07 = "f7f7fb";
-    #   base08 = "ea51b2";
-    #   base09 = "b45bcf";
-    #   base0A = "00f769";
-    #   base0B = "ebff87";
-    #   base0C = "a1efe4";
-    #   base0D = "62d6e8";
-    #   base0E = "b45bcf";
-    #   base0F = "00f769";
-    # };
+    base16Scheme = {
+      # Tokyo Night Dark
+      base00 = "#1A1B26";
+      base01 = "#16161E";
+      base02 = "#2F3549";
+      base03 = "#444B6A";
+      base04 = "#787C99";
+      base05 = "#A9B1D6";
+      base06 = "#CBCCD1";
+      base07 = "#D5D6DB";
+      base08 = "#C0CAF5";
+      base09 = "#A9B1D6";
+      base0A = "#0DB9D7";
+      base0B = "#9ECE6A";
+      base0C = "#B4F9F8";
+      base0D = "#2AC3DE";
+      base0E = "#BB9AF7";
+      base0F = "#F7768E";
+    };
     polarity = "dark";
     opacity.terminal = 1.0;
     cursor = {
