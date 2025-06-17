@@ -8,6 +8,7 @@
     hyprland.enable = true; # someone forgot to set this so desktop file is created
     dconf.enable = true;
     seahorse.enable = true;
+    fish.enable = true;
     fuse.userAllowOther = true;
     mtr.enable = true;
     adb.enable = true;
