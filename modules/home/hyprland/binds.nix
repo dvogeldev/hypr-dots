@@ -10,7 +10,8 @@ in
     bind = [
       "$modifier,Return,exec,${terminal}"
       "$modifier,K,exec,list-keybinds"
-      "$modifier SHIFT,Return,exec,rofi-launcher"
+      # "$modifier SHIFT,Return,exec,rofi-launcher"
+      "$modifier SHIFT,Return,exec,fuzzel" # Changed from rofi
       "$modifier SHIFT,W,exec,web-search"
       "$modifier ALT,W,exec,wallsetter"
       "$modifier SHIFT,N,exec,swaync-client -rs"
@@ -26,7 +27,8 @@ in
       "$modifier,M,exec,pavucontrol"
       "$modifier,Q,killactive,"
       "$modifier,P,pseudo,"
-      "$modifier,V,exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+      # "$modifier,V,exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+      "$modifier,V,exec, cliphist list | fuzzel --dmenu | cliphist decode | wl-copy" # Changed from rofi
       "$modifier SHIFT,I,togglesplit,"
       "$modifier,F,fullscreen,"
       "$modifier SHIFT,F,togglefloating,"
