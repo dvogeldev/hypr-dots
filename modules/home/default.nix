@@ -16,6 +16,7 @@ in
     ./fastfetch
     ./fish
     ./fonts.nix
+    ./fuzzel.nix
     ./fzf.nix
     ./gh.nix
     ./ghostty.nix
@@ -27,7 +28,7 @@ in
     ./lazygit.nix
     # ./nvf.nix
     ./qt.nix
-    ./rofi
+    # ./rofi
     ./scripts
     # ./starship.nix
     ./stylix.nix
