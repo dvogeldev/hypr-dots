@@ -27,6 +27,7 @@ in
     ./kitty.nix
     ./lazygit.nix
     # ./nvf.nix
+    ./qutebrowser.nix
     ./qt.nix
     # ./rofi
     ./scripts
