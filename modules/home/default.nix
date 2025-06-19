@@ -5,6 +5,7 @@ in
 {
   imports = [
     ./amfora.nix
+    ./atuin.nix
     ./bash.nix
     ./bashrc-personal.nix
     ./bat.nix
