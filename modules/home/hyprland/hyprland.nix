@@ -169,7 +169,7 @@ in
       ${extraMonitorSettings}
       # To enable blur on waybar uncomment the line below
       # Thanks to SchotjeChrisman
-      #layerrule = blur,waybar
+      layerrule = blur,waybar
       # These are active only in the " resize " submap
       submap = resize
       binde = , h, resizeactive, -30 0
