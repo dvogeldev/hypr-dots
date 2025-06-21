@@ -36,6 +36,7 @@
     aspellDicts.en
     fd
     fzf
+    graphviz
     nixfmt-rfc-style # nix formatter updated to latest spec
     nil # lsp for nix
     pandoc
