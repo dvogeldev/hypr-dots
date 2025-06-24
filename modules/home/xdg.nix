@@ -5,6 +5,10 @@
     mime.enable = true;
     mimeApps = {
       enable = true;
+      defaultApplications = {
+        "x-scheme-handler/http" = "brave-browser.desktop";
+        "x-scheme-handler/https" = "brave-browser.desktop";
+      };
     };
     portal = {
       enable = true;
