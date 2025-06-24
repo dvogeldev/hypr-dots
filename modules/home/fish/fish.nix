@@ -15,6 +15,9 @@
     '';
     # interactiveShellInit is for commands that should run only for interactive shells
     interactiveShellInit = ''
+      # Add ~/.local/bin to PATH
+      fish_add_to_path ~/.local/bin
+      
       # Environment variables
       set -gx TERMINAL "ghostty"
       set -gx EDITOR "emacsclient -c -a 'Emacs'"
