@@ -15,6 +15,7 @@ in
       "$modifier,Y,exec,ghostty -e yazi"
       "$modifier,D,exec,discord"
       "$modifier,G,exec,gimp"
+      "$modifier,O,exec,codellm"
 
       # System Controls
       "$modifier,Q,killactive"
