@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   xdg = {
     enable = true;
     mime.enable = true;
@@ -7,8 +8,13 @@
     };
     portal = {
       enable = true;
-      extraPortals = [pkgs.xdg-desktop-portal-hyprland];
-      configPackages = [pkgs.hyprland];
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-gtk # Recommended for file pickers in GTK apps
+        # xdg-desktop-portal-kde # If you use KDE applications
+      ];
+      # Ensure xdg-open uses the portal system
+      xdgOpenUsePortal = true;
     };
   };
 }
